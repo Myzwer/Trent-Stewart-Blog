@@ -1,0 +1,255 @@
+@import 'variables';
+// Global Styles for body
+body {
+  overflow-y: scroll; 
+  overflow-x:hidden;
+  background-color: $gray-4;
+  font-family: $main-font;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: $head-font;
+}
+
+.align-left {
+  text-align: left;
+}
+
+.align-right {
+  text-align: right;
+}
+
+.align-center {
+  text-align: center;
+}
+
+.header-2 {
+  font-size: 2em;
+  text-transform: uppercase;
+}
+
+.fullWidth {
+   width: 100%;
+   margin-left: auto;
+   margin-right: auto;
+   max-width: initial;
+}
+
+.billboard-img {
+background: url(http://trentstewart.org/wp-content/uploads/2019/08/Trent-Homepage-Photo.jpg) no-repeat bottom; 
+  background-attachment: scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  color: $primary;
+  margin-top: -80px;
+}
+
+@media screen and (min-width: 68em) {
+  .billboard-img {
+  background-attachment: fixed;
+  }
+}
+
+
+
+.billboard-main {
+  padding-top: 200px;
+  padding-bottom: 200px;
+}
+
+.billboard-main h1 {
+  font-size: 3em;
+  text-transform: uppercase;
+}
+
+
+.center {
+  text-align: center;
+}
+
+.quote {
+
+  text-align: center;
+  padding: 20px;
+  font-size: 1.3em;
+}
+
+.signature {
+  width: 20%;
+  text-align: center;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 64em) {
+.signature {
+  width: 8%;
+}
+}
+
+//Header
+.wrapper {
+  display: flex;
+  justify-content: flex-end;
+  transition: 1s;
+}
+
+.circle-button {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 75px;
+  height: 75px;
+  border-radius: 100%;
+  transition: .1s;
+  z-index: 2;
+}
+
+.lines {
+  position: relative;
+  margin-top: 5px;
+  height: 6px;
+  width: 35px;
+  background-color: $primary;
+  border-radius: 25px;
+  top: 0px;
+  transition: .35s;
+  transition-timing-function: ease-out;
+}
+
+.lines:first-child{
+  margin-top: 0
+}
+
+.first-rectangle-down {
+  top: 11px;
+  transform: rotate(135deg);
+}
+
+.third-rectangle-up {
+  top: -11px;
+  transform: rotate(-135deg);
+}
+
+.second-rectangle-rotate {
+  transform: rotate(135deg);
+}
+
+.overlay {
+  opacity: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: $gray-4;
+  color: $primary;
+  z-index: -1;
+  transition: .75s;
+}
+
+.overlay-content {
+  position: relative;
+  top: 25%;
+  margin-top: 30px;
+}
+
+h1 {
+  margin-bottom: 50px;
+  color: $primary;
+  font-size: 16px;
+  text-align: center;
+  font-weight: 100;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+}
+
+h1:last-child{
+  margin-bottom: 0px;
+}
+
+.overlay-show {
+  opacity: 1;
+  z-index: 1;
+}
+
+.circle-button2 {
+  background-color: grey;
+  border-radius: 100%;
+  box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.20);
+  transition: .1s;
+}
+
+
+//footer
+footer {
+  background-color: $bg;
+  color: $bg;
+}
+
+#footer-links a {
+  color: $primary;
+}
+
+
+
+
+@media screen and (min-width: 64em) {
+  .footer-link {
+  text-align: center;
+  padding-top: 75px;
+}
+}
+
+/*Change icons size here*/
+.social-icons .fa {
+  font-size: 1.5em;
+}
+/*Change icons circle size and color here*/
+.social-icons .fa {
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  color: #FFF;
+  cursor: pointer;
+}
+
+.social-icons.icon-circle .fa{ 
+  border-radius: 50%;
+}
+.social-icons.icon-rounded .fa{
+  border-radius:5px;
+}
+.social-icons.icon-flat .fa{
+  border-radius: 0;
+}
+
+.social-icons ul {
+  text-align: center;
+}
+
+#social-links {
+margin: 0;
+}
+
+.social-icons li {
+  list-style-type: none;
+  display: inline-block;
+}
+
+.copyright {
+  font-size: .8em;
+  text-align: center;
+  color: $primary;
+  padding-bottom: 10px;
+}
+
+@media screen and (min-width: 64em) {
+  .two-word {
+    text-align: left;
+    padding-left: 10px;
+  }
+}

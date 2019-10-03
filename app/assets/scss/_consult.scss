@@ -1,0 +1,455 @@
+@import 'variables';
+
+.billboard-consult {
+background: url(../images/consulting-header.jpg) no-repeat bottom center; 
+  background-attachment: scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  color: $primary;
+  margin-top: -80px;
+}
+
+@media screen and (min-width: 68em) {
+  .billboard-consult {
+  background-attachment: fixed;
+  }
+}
+
+
+@media screen and (max-width: 39.9375em) {
+.billboard-consult h1 {
+	font-size: 2em;
+	}
+}
+
+.consult-tag {
+  text-align: center;
+  font-size: 1.3em;
+}
+
+.consult-hero {
+  background-color: $gray-2;
+  color: $primary;
+  text-align: left;
+}
+
+.consult-hero h2 {
+  text-transform: capitalize;
+  font-size: 2em;
+}
+
+.hero-callout {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+@media screen and (min-width: 40em) {
+  .hero-callout {
+    height: 450px;
+  }
+}
+
+
+.consult-approach {
+  background-color: $gray-3;
+  color: $primary;
+}
+
+.consult-approach h2 {
+  text-transform: uppercase;
+  font-size: 2.5em;
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.approach-tag {
+  font-style: italic;
+  text-align: center;
+  font-size: 1.3em;
+  padding-bottom: 30px;
+}
+
+
+.consult-callout {
+  border-left: 2px solid $secondary;
+  font-size: 1.3em;
+  padding-left: 10px;
+}
+
+.consult-approach p {
+  text-align: justify;
+  font-size: .9em;
+  padding-bottom: 30px;
+  padding-left: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* INTRO SECTION
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.intro {
+  padding: 20px 0;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.timeline {
+  overflow-x: hidden;
+}
+
+.intro h2 {
+  font-size: 2.5em;
+  text-transform: uppercase;
+}
+
+/* TIMELINE
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.timeline ul {
+  background-color: $gray-2;
+  padding: 10px 0;
+}
+
+.timeline ul li {
+  list-style-type: none;
+  position: relative;
+  width: 6px;
+  margin: 0 auto;
+  padding-top: 50px;
+  background: $gray-4;
+}
+
+.timeline ul li::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  //delete option for add animation
+  // background: #7E3D4A;
+  // !delete option for add animation
+  //use with js for animation
+  background: inherit;
+  // !use with js for animation
+}
+
+.timeline ul li div {
+  position: relative;
+  bottom: 0;
+  width: 400px;
+  padding: 15px;
+  background: $gray-4;
+  color: $primary;
+}
+
+.timeline ul li div::before {
+  content: '';
+  position: absolute;
+  bottom: 7px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+}
+
+.timeline ul li:nth-child(odd) div {
+  left: 45px;
+}
+
+.timeline ul li:nth-child(odd) div::before {
+  left: -15px;
+  border-width: 8px 16px 8px 0;
+  border-color: transparent $gray-4 transparent transparent;
+}
+
+.timeline ul li:nth-child(even) div {
+  left: -439px;
+}
+
+.timeline ul li:nth-child(even) div::before {
+  right: -15px;
+  border-width: 8px 0 8px 16px;
+  border-color: transparent transparent transparent $gray-4;
+}
+
+time {
+  display: block;
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.timeline h5 {
+  font-size: 1.25em;
+  color: $secondary;
+}
+
+
+/* EFFECTS
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.timeline ul li::after {
+  transition: background .5s ease-in-out;
+}
+
+.timeline ul li.in-view::after {
+  background: $secondary;
+}
+
+.timeline ul li div {
+  //use with js for animation
+  visibility: hidden;
+  opacity: 0;
+  // !use with js for animation
+  transition: all .5s ease-in-out;
+}
+
+//use with js for animation
+.timeline ul li:nth-child(odd) div {
+  transform: translate3d(200px, 0, 0);
+}
+.timeline ul li:nth-child(even) div {
+  transform: translate3d(-200px, 0, 0);
+}
+// !use with js for animation
+.timeline ul li.in-view div {
+  transform: none;
+  visibility: visible;
+  opacity: 1;
+}
+
+
+/* GENERAL MEDIA QUERIES
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+@media screen and (max-width: 900px) {
+  .timeline ul li div {
+    width: 250px;
+  }
+  .timeline ul li:nth-child(even) div {
+    left: -289px;
+    /*250+45-6*/
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .timeline ul li {
+    margin-left: 20px;
+  }
+  .timeline ul li div {
+    width: calc(100vw - 91px);
+  }
+  .timeline ul li:nth-child(even) div {
+    left: 45px;
+  }
+  .timeline ul li:nth-child(even) div::before {
+    left: -15px;
+    border-width: 8px 16px 8px 0;
+    border-color: transparent $gray-4 transparent transparent;
+  }
+}
+
+
+// Packages
+.consult-sections {
+  background-color: $gray-2;
+
+  
+  &:nth-child(odd) {
+    background-color: $gray-3;
+  }
+
+  h2 {
+    text-align: center;
+    height: 90%; 
+    width:100%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.5em;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
+  h3 {
+    font-size: 1.8em;
+    padding-top: 100px;
+    text-align: left;
+  }
+
+  li {
+    text-align: left;
+  }
+
+  a {
+    margin-bottom: 100px;
+  }
+
+  p {
+    text-align: left;
+  }
+}
+
+.right-padding {
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+@media screen and (max-width: 39.9375em) {
+.right-padding {
+  padding-left: 5px;
+  padding-right: 5px;
+}
+}
+
+@media screen and (max-width: 39.9375em) {
+  .consult-sections h2 {
+    padding-top: 160px;
+    padding-bottom: 160px;
+  }
+}
+
+.package-background {
+  background: linear-gradient(
+      rgba(0, 0, 0, 0.25), 
+      rgba(0, 0, 0, 0.25)
+    ), url(http://trentstewart.org/wp-content/uploads/2019/08/Virtual-Consulting.jpeg) no-repeat center center; 
+  background-attachment: scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  color: $primary;
+}
+
+.package-background2 {
+  background: linear-gradient(
+      rgba(0, 0, 0, 0.25), 
+      rgba(0, 0, 0, 0.25)
+    ), url(http://trentstewart.org/wp-content/uploads/2019/08/specialized-consutling.jpeg) no-repeat center center; 
+    background-attachment: scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  color: $primary;
+}
+
+.package-background3 {
+  background: linear-gradient(
+      rgba(0, 0, 0, 0.25), 
+      rgba(0, 0, 0, 0.25)
+    ), url(http://trentstewart.org/wp-content/uploads/2019/08/comprehensive-Consulting.jpeg) no-repeat bottom center; 
+  background-attachment: scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  color: $primary;
+}
+
+
+
+
+
+
+
+
+// About Section
+
+.billboard-consult-about {
+background: url(../images/main.jpg) no-repeat center center; 
+  background-attachment: scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  color: $primary;
+}
+
+
+
+@media screen and (max-width: 39.9375em) {
+.billboard-consult-about h1 {
+  font-size: 2em;
+  }
+}
+
+.consult-about {
+  padding: 30px;
+}
+
+
+.consult-team {
+  background-color: $gray-3;
+  padding-bottom: 15px;
+
+  h1 {
+    font-size: 2em;
+    padding-top: 30px;
+    padding-bottom: 25px;
+  }
+}
+
+.ron {
+  background: url(http://trentstewart.org/wp-content/uploads/2019/09/ron-preaching-1.jpg) no-repeat center center; 
+    background-attachment: scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  color: $primary;
+}
+
+//meet the team section
+
+.team-card {
+  background-color: $gray-2;
+
+  h4 {
+    padding: 10px 0 0 10px;
+    margin-bottom: -8px;
+  }
+}
+
+
+.team-card-title {
+  color: $secondary;
+  padding-left: 10px;
+  margin-bottom: -3px;
+  font-size: .9em;
+}
+
+.team-card-bio {
+  padding: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+

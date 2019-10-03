@@ -1,0 +1,40 @@
+.billboard-about {
+background: url(../images/main.jpg) no-repeat bottom center; 
+background-attachment: scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  color: $primary;
+  margin-top: -80px;
+}
+
+@media screen and (min-width: 68em) {
+  .billboard-about {
+  background-attachment: fixed;
+  }
+}
+
+.bio {
+  color: $primary;
+  background-color: $gray-3;
+  padding: 25px;
+}
+
+@media screen and (min-width: 40em) {
+  .bio{
+  padding:  100px 20px 10px 20px;
+  }
+}
+
+@media screen and (min-width: 64em) {
+  .bio{
+    padding:  100px 200px 10px 200px;
+  }
+}
+
+.trent-fam {
+  background-color: $gray-3;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
