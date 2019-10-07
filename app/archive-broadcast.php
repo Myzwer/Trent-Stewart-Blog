@@ -88,17 +88,18 @@ if ( $broadcasts->have_posts() ) {
                 echo "</div>";
                 echo "</div>";
                 echo "</div>";
-
-
     }
-                    echo "<div class='pagination'>";
-        echo paginate_links( array(
+
+            echo "<div class='page-nav'>";
+            echo "<div class='navigation'>";
+            echo "<ul>";
+            echo paginate_links( array(
             'base'         => str_replace( 999999999, '%#%', esc_url( get_pagenum_link( 999999999 ) ) ),
             'total'        => $broadcasts->max_num_pages,
             'current'      => max( 1, get_query_var( 'paged' ) ),
             'format'       => '?paged=%#%',
             'show_all'     => false,
-            'type'         => 'plain',
+            'type'         => 'list',
             'end_size'     => 2,
             'mid_size'     => 1,
             'prev_next'    => true,
@@ -107,15 +108,13 @@ if ( $broadcasts->have_posts() ) {
             'add_args'     => false,
             'add_fragment' => '',
         ) );
-
-        echo "</div>";
+            echo "</ul>";
+            echo "</div>";
+            echo "</div>";
 } else {
     echo 'there are no posts.'; // no posts found
 }
-        echo "<div class = 'page-nav'>";
-        posts_nav_link( ' &#183; ', 'previous page', 'next page' );
-
-        echo "</div>";
+        
 // Restore original Post Data
 wp_reset_postdata();
 
@@ -183,17 +182,17 @@ if ( $broadcasts->have_posts() ) {
                 echo "</div>";
                 echo "</div>";
 
-
-
     }
-                    echo "<div class='pagination'>";
-        echo paginate_links( array(
+            echo "<div class='page-nav'>";
+            echo "<div class='navigation'>";
+            echo "<ul>";
+            echo paginate_links( array(
             'base'         => str_replace( 999999999, '%#%', esc_url( get_pagenum_link( 999999999 ) ) ),
             'total'        => $broadcasts->max_num_pages,
             'current'      => max( 1, get_query_var( 'paged' ) ),
             'format'       => '?paged=%#%',
             'show_all'     => false,
-            'type'         => 'plain',
+            'type'         => 'list',
             'end_size'     => 2,
             'mid_size'     => 1,
             'prev_next'    => true,
@@ -202,11 +201,12 @@ if ( $broadcasts->have_posts() ) {
             'add_args'     => false,
             'add_fragment' => '',
         ) );
-
-        echo "</div>";
-} else {
-    echo 'there are no posts.'; // no posts found
-}
+            echo "</ul>";
+            echo "</div>";
+            echo "</div>";
+        } else {
+            echo 'there are no posts.'; // no posts found
+        }
 
 ?>
 </div>
