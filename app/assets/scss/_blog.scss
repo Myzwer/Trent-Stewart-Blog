@@ -234,12 +234,30 @@ background: url(https://images.unsplash.com/photo-1510519138101-570d1dca3d66?ixl
 }
 
 .page-numbers .dots {
-
     border-radius: 3px;
     padding: 12px;
     padding: 0.75rem;
     color: white;
 }
+
+.categories {
+  list-style-type: none;
+  color: white;
+  font-size: 1.8em;
+  background-color: $gray-2;
+  margin-top: 20px;
+  text-align: center;
+}
+
+
+.categories ul li{
+  list-style-type: none;
+  font-size: .5em;
+  display: inline-block;
+  padding: 5px 15px;
+}
+
+
 
 
 
