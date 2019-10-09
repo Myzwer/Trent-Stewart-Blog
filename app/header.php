@@ -32,12 +32,13 @@
 
 <div class="overlay">
   <div class="overlay-content">
-    <h1><a class = "navlink" href = "http://trentstewart.org">Home</a></h1>
+    <!-- <h1><a class = "navlink" href = "http://trentstewart.org">Home</a></h1>
     <h1><a class = "navlink" href = "http://trentstewart.org/about/">About</a></h1>
     <h1><a class = "navlink" href = "http://trentstewart.org/blog/">Blog</a></h1>
     <h1><a class = "navlink" href = "http://trentstewart.org/broadcast/">Media</a></h1>
     <h1><a class = "navlink" href = "http://trentstewart.org/consult/">Consulting</a></h1>
-    <h1><a class = "navlink" href = "http://trentstewart.org/contact/">Contact</a></h1>
+    <h1><a class = "navlink" href = "http://trentstewart.org/contact/">Contact</a></h1> -->
+    <?php wp_nav_menu( array( 'theme_location' => 'header-menu' ) ); ?>
   </div>
 </div>
 
