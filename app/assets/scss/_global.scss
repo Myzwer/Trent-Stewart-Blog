@@ -253,3 +253,38 @@ margin: 0;
     padding-left: 10px;
   }
 }
+
+.billboard-404 {
+background: linear-gradient(
+      rgba(0, 0, 0, 0.45), 
+      rgba(0, 0, 0, 0.45)
+    ),
+url(http://trentstewart.org/wp-content/uploads/2019/10/0e9192016_1567657936_mixtape-sermon-picture-2-copy.jpg) no-repeat bottom center; 
+background-attachment: scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  color: $primary;
+  margin-top: -80px;
+}
+
+@media screen and (min-width: 68em) {
+  .billboard-404 {
+  background-attachment: fixed;
+  }
+}
+
+.billboard-404 h1{
+  font-size: 2.3em;
+  margin-bottom: 0;
+}
+
+.billboard-404 h2{
+  font-size: 1.5em;
+}
+
+.billboard-404 h3{
+  font-size: 1em;
+}
+
