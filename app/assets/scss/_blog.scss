@@ -249,14 +249,23 @@ background: url(https://images.unsplash.com/photo-1510519138101-570d1dca3d66?ixl
   text-align: center;
 }
 
+.categories ul {
+  margin: 0;
+}
+
 
 .categories ul li{
   list-style-type: none;
   font-size: .7em;
-  display: inline-block;
+  display: block;
   padding: 5px 15px;
 }
 
+@media screen and (min-width: 40em) {
+  .categories ul li{
+  display: inline-block;
+}
+}
 
 
 
