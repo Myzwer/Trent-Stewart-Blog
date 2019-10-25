@@ -27,8 +27,6 @@ setup_postdata($post);
     <div class="grid-container fullWidth">
         <div class="grid-x grid-padding-x">
             <div class="small-12 cell">
-                <?php wp_list_categories();
-                ?>
             </div>
         </div>
     </div>
