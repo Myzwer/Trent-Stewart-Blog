@@ -18,7 +18,8 @@ get_header(); ?>
     <div class="grid-container fullWidth">
         <div class="grid-x grid-padding-x">
             <div class="small-12 cell">
-                <?php wp_list_categories ( [ 'taxonomy' => 'watch_category' ] ) ?>
+                <?php print apply_filters( 'taxonomy-images-queried-term-image', '' );
+                wp_list_categories ( [ 'taxonomy' => 'watch_category' ] ) ?>
             </div>
         </div>
     </div>
