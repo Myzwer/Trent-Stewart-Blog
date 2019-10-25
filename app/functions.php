@@ -106,7 +106,8 @@ function broadcast_init() {
         'hierarchical'       => false,
         'menu_position'      => null,
         'supports'           => array( 'title', 'editor', 'author', 'thumbnail', 'excerpt', 'custom-fields'),
-        'menu_icon'          => 'dashicons-upload'
+        'menu_icon'          => 'dashicons-upload',
+        'taxonomies'         => array( 'watch_category' )
     );
  
     register_post_type( 'broadcast', $args );
@@ -132,17 +133,40 @@ function broadcast_init() {
             'rewrite'      => array( 'slug' => 'format' )
         )
     );
-
-
-
-
-
-
 }
  
 add_action( 'init', 'broadcast_init' );
 
 
+
+
+// This is the taxonomy for the Sermon Videos / Other Video Categories.
+    register_taxonomy('watch_category', 'broadcast',
+        array(
+            'labels' => array(
+                'name' => __( 'Watch Categories' ),
+                'singular_name' => __( 'Watch Category' ),
+                'add_new_item' => __( 'Add New Watch Category' ),
+                'edit_item' => __( 'Edit Watch Category' ),
+                'new_item_name' => __( 'New Watch Category' ),
+                'view' => __( 'View Watch Categories' ),
+                'view_item' => __( 'View Watch Categories' ),
+                'search_items' => __( 'Search Watch Categories' ),
+                'not_found' => __( 'No Watch Categories found' ),
+                'not_found_in_trash' => __( 'No Watch Categories found in Trash' ),
+                'parent_item' => __( 'Parent Watch Categories' ),
+            ),
+            'hierarchical' => true,
+            'rewrite'      => array( 'slug' => 'watch_categories' )
+        )
+    );
+
+add_action( 'init', 'broadcast_init' );
+
+
+
+
+//pagination setup
 function wpbeginner_numeric_posts_nav() {
  
     if( is_singular() )

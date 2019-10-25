@@ -24,6 +24,15 @@ setup_postdata($post);
         </div>
     </div>
 
+    <div class="grid-container fullWidth">
+        <div class="grid-x grid-padding-x">
+            <div class="small-12 cell">
+                <?php wp_list_categories();
+                ?>
+            </div>
+        </div>
+    </div>
+
 
     <h2 class="media-titles">The Ascent Podcast</h2>
     <div class="grid-container blog-background">

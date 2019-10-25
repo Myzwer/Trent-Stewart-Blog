@@ -1,6 +1,6 @@
 //background header settings
 .blog-page-bg {
-background: url(https://images.unsplash.com/photo-1510519138101-570d1dca3d66?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1331&q=80) no-repeat bottom center; 
+  background: url(https://images.unsplash.com/photo-1510519138101-570d1dca3d66?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1331&q=80) no-repeat bottom center;
   background-attachment: scroll;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -12,13 +12,13 @@ background: url(https://images.unsplash.com/photo-1510519138101-570d1dca3d66?ixl
 
 @media screen and (min-width: 68em) {
   .billboard-consult {
-  background-attachment: fixed;
- }
+    background-attachment: fixed;
+  }
 }
 
 @media screen and (min-width: 68em) {
   .blog-page-bg {
-  background-attachment: fixed;
+    background-attachment: fixed;
   }
 }
 
@@ -28,13 +28,13 @@ background: url(https://images.unsplash.com/photo-1510519138101-570d1dca3d66?ixl
 }
 
 .blog-post {
-	margin-top: 20px;
-	padding-bottom: 10px;
-	margin-bottom: 20px;
-	background-color: $gray-2;
-	// border: 1px solid black;
-	color: $primary;
-	// box-shadow: 2px 2px 20px grey;
+  margin-top: 20px;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+  background-color: $gray-2;
+  // border: 1px solid black;
+  color: $primary;
+  // box-shadow: 2px 2px 20px grey;
 
   a {
     text-decoration: underline $secondary;
@@ -43,22 +43,25 @@ background: url(https://images.unsplash.com/photo-1510519138101-570d1dca3d66?ixl
   a:hover {
     color: $primary;
   }
+}
 
+.blog-post img {
+  width: 100%;
 }
 
 .blog-post .title {
-	text-transform: capitalize;
-	font-weight: 600;
-	color: $primary;
-	font-size: 2em;
+  text-transform: capitalize;
+  font-weight: 600;
+  color: $primary;
+  font-size: 2em;
   text-decoration: underline $secondary;
-  padding: 40px 0 0px 10px;
+  padding: 20px 0 0px 10px;
 }
 
 .blog-post .author {
-	font-style: bold;
+  font-style: bold;
   text-transform: uppercase;
-	padding-left: 10px;
+  padding-left: 10px;
   font-size: .8em;
 }
 
@@ -77,10 +80,6 @@ background: url(https://images.unsplash.com/photo-1510519138101-570d1dca3d66?ixl
 }
 
 
-
-
-
-
 // Posts Page Code
 .post-header {
   -webkit-background-size: cover;
@@ -95,26 +94,25 @@ background: url(https://images.unsplash.com/photo-1510519138101-570d1dca3d66?ixl
 }
 
 @media screen and (min-width: 64em) {
-	.post-header {
-		background-attachment: fixed;
-	}
+  .post-header {
+    background-attachment: fixed;
+  }
 }
 
 .post-title {
-	text-transform: uppercase;
-	font-size: 3em;
-	text-align: center;
+  text-transform: uppercase;
+  font-size: 3em;
+  text-align: center;
 }
 
 .post-author {
-	text-align: center;
-	font-size: 1.5em;
+  text-align: center;
+  font-size: 1.5em;
 }
 
 
-
 .blog-article p:first-of-type {
-	padding-top: 30px;
+  padding-top: 30px;
 }
 
 
@@ -137,21 +135,22 @@ background: url(https://images.unsplash.com/photo-1510519138101-570d1dca3d66?ixl
 }
 
 
-.embed-container { 
-  position: relative; 
-  padding-bottom: 56.25%; 
-  height: 0; 
-  overflow: hidden; 
-  max-width: 100%; 
-  height: auto; } 
+.embed-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  max-width: 100%;
+  height: auto;
+}
 
-  .embed-container iframe, .embed-container object, .embed-container embed { 
-    position: absolute; 
-    top: 0; 
-    left: 0; 
-    width: 100%; 
-    height: 100%; 
-  }
+.embed-container iframe, .embed-container object, .embed-container embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
 
 .sermon-video-main {
   padding-top: 100px;
@@ -160,7 +159,7 @@ background: url(https://images.unsplash.com/photo-1510519138101-570d1dca3d66?ixl
 
 @media screen and (min-width: 40em) {
   .sermon-video-main {
-  padding-bottom: 100px;
+    padding-bottom: 100px;
 
   }
 }
@@ -188,56 +187,56 @@ background: url(https://images.unsplash.com/photo-1510519138101-570d1dca3d66?ixl
 .page-nav {
   width: 100%;
   padding: 25px 0px;
-    text-align: center;
+  text-align: center;
 }
 
 .navigation li a,
 .navigation li a:hover,
 .navigation li.active a,
 .navigation li.disabled {
-    color: #fff;
-    text-decoration:none;
+  color: #fff;
+  text-decoration: none;
 }
- 
+
 .navigation li {
-    display: inline;
+  display: inline;
 }
- 
+
 .navigation li a,
 .navigation li a:hover,
 .navigation li.active a,
 .navigation li.disabled {
-    background-color: #6FB7E9;
-    border-radius: 3px;
-    cursor: pointer;
-    padding: 12px;
-    padding: 0.75rem;
+  background-color: #6FB7E9;
+  border-radius: 3px;
+  cursor: pointer;
+  padding: 12px;
+  padding: 0.75rem;
 }
- 
+
 .navigation li a:hover,
 .navigation li.active a {
-    background-color: #3C8DC5;
+  background-color: #3C8DC5;
 }
 
 
 .page-numbers .current {
-    background-color: #3c8dc5;
-    border-radius: 3px;
-    cursor: pointer;
-    padding: 12px;
-    padding: 0.75rem;
-    color: white;
+  background-color: #3c8dc5;
+  border-radius: 3px;
+  cursor: pointer;
+  padding: 12px;
+  padding: 0.75rem;
+  color: white;
 }
 
 .page-numbers .current:hover {
-    background-color: #3C8DC5;
+  background-color: #3C8DC5;
 }
 
 .page-numbers .dots {
-    border-radius: 3px;
-    padding: 12px;
-    padding: 0.75rem;
-    color: white;
+  border-radius: 3px;
+  padding: 12px;
+  padding: 0.75rem;
+  color: white;
 }
 
 .categories {
@@ -254,7 +253,7 @@ background: url(https://images.unsplash.com/photo-1510519138101-570d1dca3d66?ixl
 }
 
 
-.categories ul li{
+.categories ul li {
   list-style-type: none;
   font-size: .7em;
   display: block;
@@ -262,9 +261,9 @@ background: url(https://images.unsplash.com/photo-1510519138101-570d1dca3d66?ixl
 }
 
 @media screen and (min-width: 40em) {
-  .categories ul li{
-  display: inline-block;
-}
+  .categories ul li {
+    display: inline-block;
+  }
 }
 
 

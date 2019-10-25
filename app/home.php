@@ -8,7 +8,7 @@ get_header(); ?>
     <div class="grid-container fullWidth billboard-img blog-page-bg">
         <div class="grid-x grid-padding-x">
             <div class="large-12 cell billboard-main">
-                <h1 class = "center">Blog</h1>
+                <h1 class = "center">Read</h1>
                 <p class = "quote">Helping churches create healthy environments that grow healthy ministries.</p>
             </div>
         </div>
@@ -18,7 +18,8 @@ get_header(); ?>
     <div class="grid-container fullWidth">
         <div class="grid-x grid-padding-x">
             <div class="small-12 cell">
-                <?php wp_list_categories(); ?>
+                <?php wp_list_categories();
+                ?>
             </div>
         </div>
     </div>
