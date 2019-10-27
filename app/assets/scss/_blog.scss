@@ -1,4 +1,4 @@
-//background header settings
+//background header setting for BLOG
 .blog-page-bg {
   background: url(https://images.unsplash.com/photo-1510519138101-570d1dca3d66?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1331&q=80) no-repeat bottom center;
   background-attachment: scroll;
@@ -18,6 +18,24 @@
 
 @media screen and (min-width: 68em) {
   .blog-page-bg {
+    background-attachment: fixed;
+  }
+}
+
+//background header setting for WATCH
+.watch-page-bg {
+  background: url(http://trentstewart.org/wp-content/uploads/2019/10/0e9192016_1567657936_mixtape-sermon-picture-2-copy.jpg) no-repeat bottom center;
+  background-attachment: scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  color: $primary;
+  margin-top: -80px;
+}
+
+@media screen and (min-width: 68em) {
+  .watch-page-bg {
     background-attachment: fixed;
   }
 }
@@ -206,7 +224,7 @@
 .navigation li a:hover,
 .navigation li.active a,
 .navigation li.disabled {
-  background-color: #6FB7E9;
+  background-color: $secondary;
   border-radius: 3px;
   cursor: pointer;
   padding: 12px;
@@ -293,6 +311,13 @@
   height: 150px;
   width: 277px;
   color: rgba(0,0,0,0);
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+  text-align: center;
+}
+
+.watch_category a:hover {
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
 
 @media screen and (min-width: 40em) {
@@ -302,8 +327,16 @@
 }
 
 .watch_category .cat-item {
-  margin: 10px;
+  margin: 20px;
 }
+
+@media screen and (max-width: 39.9375em) {
+  .watch_category .cat-item {
+    text-align: center;
+    margin: 20px auto;
+  }
+}
+
 
 .cat-item-10 {
   background: url(http://trentstewart.org/wp-content/uploads/2019/10/LOTM-App-Wide.jpg) no-repeat center center scroll;

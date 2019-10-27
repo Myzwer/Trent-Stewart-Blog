@@ -5,7 +5,7 @@ Template Name: Custom Taxonomy Watch
 get_header(); ?>
 
     <div class = "featured-pages">
-        <div class="grid-container fullWidth billboard-img blog-page-bg">
+        <div class="grid-container fullWidth billboard-img watch-page-bg">
             <div class="grid-x grid-padding-x">
                 <div class="large-12 cell billboard-main">
                     <h1 class = "center">Watch</h1>
@@ -24,6 +24,7 @@ get_header(); ?>
         </div>
     </div>
 
+    <h2 class = "media-titles">Sermons</h2>
     <div class="grid-container blog-background">
         <div class="grid-x grid-padding-x">
 

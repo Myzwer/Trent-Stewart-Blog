@@ -15,7 +15,7 @@ $this_page = get_page_by_path('broadcasts');
 
 
 <div class = "featured-pages">
-    <div class="grid-container fullWidth billboard-img media-page-bg">
+    <div class="grid-container fullWidth billboard-img watch-page-bg">
         <div class="grid-x grid-padding-x">
             <div class="large-12 cell billboard-main">
                 <h1 class = "center">Watch</h1>
