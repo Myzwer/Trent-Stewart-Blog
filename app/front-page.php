@@ -31,9 +31,9 @@ get_header(); ?>
             </div>
         </div>
 
-        <div class="purpose-section">
-            <h3 class="purpose-statement"><?php the_field('purpose_statement'); ?></h3>
-        </div>
+<!--        <div class="purpose-section">-->
+<!--            <h3 class="purpose-statement">--><?php //the_field('purpose_statement'); ?><!--</h3>-->
+<!--        </div>-->
 
         <div class="grid-container fullWidth">
             <div class="grid-x grid-padding-x">
@@ -72,7 +72,7 @@ get_header(); ?>
                         </div>
                     </div>
                     <div class="card-lower">
-                        <h2 class="center header-2">About</h2>
+                        <h2 class="center header-2">Meet Pastor Trent</h2>
                         <p class="tag"><?php the_field('about_section'); ?> </p>
                         <div class="center">
                             <a class="ff dark1" href="http://trentstewart.org/about">Read More</a>

@@ -260,13 +260,13 @@
 
 
 .categories {
-  list-style-type: none;
-  color: white;
-  font-size: 1.8em;
-  background-color: $gray-2;
-  margin-top: 20px;
-  text-align: center;
-}
+   list-style-type: none;
+   color: white;
+   font-size: 1.8em;
+   background-color: $gray-2;
+   margin-top: 20px;
+   text-align: center;
+ }
 
 .categories ul {
   margin: 0;
@@ -286,6 +286,35 @@
   }
 }
 
+//This is the Watch (sermons) page code. If you want to switch to the thumbnail version, disable this section and enable the lower section
+.watch_category {
+  list-style-type: none;
+  color: white;
+  font-size: 1.8em;
+  background-color: $gray-2;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.watch_categoryul {
+  margin: 0;
+}
+
+
+.watch_category ul li {
+  list-style-type: none;
+  font-size: .7em;
+  display: block;
+  padding: 5px 15px;
+}
+
+@media screen and (min-width: 40em) {
+  .watch_category ul li {
+    display: inline-block;
+  }
+}
+
+/*
 .watch_category {
   list-style-type: none;
   color: white;
@@ -399,4 +428,4 @@
   background-size: cover;
   height: 150px;
   width: 277px;
-}
+}*/
