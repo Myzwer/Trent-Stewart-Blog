@@ -81,7 +81,7 @@ get_header(); ?>
       <div>
         <time><?php the_field('phase_1_title'); ?></time> <!-- <h5>Request Phase:</h5> -->
         <p><?php the_field('phase_1_description'); ?></p>
-    <a class="ff dark1" href="#">Contact Us</a> 
+    <a class="ff dark1" href="http://trentstewart.org/contact">Contact Us</a>
     </li>
     <li>
       <div>
@@ -176,7 +176,7 @@ get_header(); ?>
                         <p>
                             <?php the_field('package_1_paragraph'); ?>
                         </p>
-                        <a class="ff dark1" href="#">Contact Us</a> 
+                        <a class="ff dark1" href="http://trentstewart.org/contact">Contact Us</a>
                     </div>
                 </div>
             </div>
@@ -199,9 +199,9 @@ get_header(); ?>
                             <ul>
                                 <?php
                                     // check if the repeater field has rows of data
-                                    if( have_rows('package_2_details_list_items') ):
+                                    if( have_rows('package_2_bullet_item_list') ):
                                         // loop through the rows of data
-                                        while ( have_rows('package_2_details_list_items') ) : the_row();
+                                        while ( have_rows('package_2_bullet_item_list') ) : the_row();
                                             // display a sub field value
                                             echo '<li>';
                                             the_sub_field('list_item');
@@ -218,9 +218,9 @@ get_header(); ?>
                             <ul>
                                 <?php
                                     // check if the repeater field has rows of data
-                                    if( have_rows('package_2_details_list_items_column_2') ):
+                                    if( have_rows('package_2_bullet_item_list_2') ):
                                         // loop through the rows of data
-                                        while ( have_rows('package_2_details_list_items_column_2') ) : the_row();
+                                        while ( have_rows('package_2_bullet_item_list_2') ) : the_row();
                                             // display a sub field value
                                             echo '<li>';
                                             the_sub_field('list_item');
@@ -239,7 +239,7 @@ get_header(); ?>
                         <p>
                             <?php the_field('package_2_paragraph'); ?>
                         </p>
-                        <a class="ff dark1" href="#">Contact Us</a> 
+                        <a class="ff dark1" href="http://trentstewart.org/contact">Contact Us</a>
                     </div>
                 </div>
             </div>
@@ -262,16 +262,16 @@ get_header(); ?>
                             <ul>
                                 <?php
                                     // check if the repeater field has rows of data
-                                    if( have_rows('package_3_details_list_items') ):
+                                    if( have_rows('package_3_bullet_item_list') ):
                                         // loop through the rows of data
-                                        while ( have_rows('package_3_details_list_items') ) : the_row();
+                                        while ( have_rows('package_3_bullet_item_list') ) : the_row();
                                             // display a sub field value
                                             echo '<li>';
                                             the_sub_field('list_item');
                                             echo '</li>';
                                         endwhile;
                                     else :
-                                        // no rows found
+                                        echo "Catas";
                                     endif;
                                 ?>
                             </ul>
@@ -281,9 +281,9 @@ get_header(); ?>
                             <ul>
                                 <?php
                                     // check if the repeater field has rows of data
-                                    if( have_rows('package_3_details_list_items_column_2') ):
+                                    if( have_rows('package_3_bullet_item_list_2') ):
                                         // loop through the rows of data
-                                        while ( have_rows('package_3_details_list_items_column_2') ) : the_row();
+                                        while ( have_rows('package_3_bullet_item_list_2') ) : the_row();
                                             // display a sub field value
                                             echo '<li>';
                                             the_sub_field('list_item');
@@ -302,7 +302,7 @@ get_header(); ?>
                         <p>
                             <?php the_field('package_1_paragraph'); ?>
                         </p>
-                        <a class="ff dark1" href="#">Contact Us</a> 
+                        <a class="ff dark1" href="http://trentstewart.org/contact">Contact Us</a>
                     </div>
                 </div>
             </div>

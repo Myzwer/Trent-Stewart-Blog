@@ -61,7 +61,7 @@ get_header(); ?>
                         <h2 class="center header-2">Blog</h2>
                         <p class="tag"><?php the_field('blog_section'); ?> </p>
                         <div class="center">
-                            <a class="ff dark1" href="http://trentstewart.org/blog">Read More</a>
+                            <a class="ff dark1" href="http://trentstewart.org/read">Read More</a>
                         </div>
                     </div>
                 </div>

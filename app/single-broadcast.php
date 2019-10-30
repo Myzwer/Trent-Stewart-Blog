@@ -34,7 +34,8 @@ $url = wp_get_attachment_url( get_post_thumbnail_id($post->ID) );
             echo "<div class='grid-x grid-padding-x'>";
                 echo "<div class='small-12 medium-8 medium-offset-2 cell '>";
 
-                the_title( '<p class = "post-title">', '</p>' );
+                    the_title( '<p class = "post-title">', '</p>' );
+                    echo '<p class="post-desc">' . get_the_excerpt() . '</p>';
                     echo "<p class='post-author'>";
                     the_author_meta('display_name', 1);
                     echo " | ";

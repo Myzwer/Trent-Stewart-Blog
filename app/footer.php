@@ -17,11 +17,14 @@
 		<a href = "http://trentstewart.org/about">About </a>
     </div>
     <div class="cell small-12  large-1  footer-link">
-		<a href = "http://trentstewart.org/blog">Blog </a>
+		<a href = "http://trentstewart.org/read">Read </a>
     </div>
     <div class="cell small-12 large-1  footer-link">
-		<a href = "http://trentstewart.org/broadcast">Media </a>
+		<a href = "http://trentstewart.org/watch">Watch </a>
     </div>
+     <div class="cell small-12 large-1  footer-link">
+         <a href = "http://trentstewart.org/listen">Listen </a>
+     </div>
     <div class="cell small-12 large-1  footer-link">
 		<a href = "http://trentstewart.org/consult">Consulting </a>
     </div>
