@@ -37,8 +37,7 @@ $url = wp_get_attachment_url( get_post_thumbnail_id($post->ID) );
                     the_title( '<p class = "post-title">', '</p>' );
                     echo '<p class="post-desc">' . get_the_excerpt() . '</p>';
                     echo "<p class='post-author'>";
-                    the_author_meta('display_name', 1);
-                    echo " | ";
+
                     echo get_the_date();
                     echo do_shortcode('[DISPLAY_ULTIMATE_SOCIAL_ICONS]');
                     echo "</p>";

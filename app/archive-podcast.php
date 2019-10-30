@@ -72,7 +72,7 @@ setup_postdata($post);
 
 
                     echo "<span class='author'>";
-                    echo 'featuring ';
+//                    echo 'featuring ';
                     the_author();
                     echo "</span>";
                     echo " | ";
