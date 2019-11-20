@@ -9,10 +9,11 @@
 <head>
 <meta charset="<?php bloginfo( 'charset' ); ?>">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="profile" href="http://gmpg.org/xfn/11">
+<title>Trent Stewart</title>
+<link rel="profile" href="https://gmpg.org/xfn/11">
 <link rel="icon" 
       type="image/png" 
-      href="http://trentstewart.org/wp-content/uploads/2019/08/favicon-32x32.png">
+      href="https://trentstewart.org/wp-content/uploads/2019/08/favicon-32x32.png">
 
 <?php wp_head(); ?>
 </head>
@@ -32,12 +33,12 @@
 
 <div class="overlay">
   <div class="overlay-content">
-    <!-- <h1><a class = "navlink" href = "http://trentstewart.org">Home</a></h1>
-    <h1><a class = "navlink" href = "http://trentstewart.org/about/">About</a></h1>
-    <h1><a class = "navlink" href = "http://trentstewart.org/blog/">Blog</a></h1>
-    <h1><a class = "navlink" href = "http://trentstewart.org/broadcast/">Media</a></h1>
-    <h1><a class = "navlink" href = "http://trentstewart.org/consult/">Consulting</a></h1>
-    <h1><a class = "navlink" href = "http://trentstewart.org/contact/">Contact</a></h1> -->
+    <!-- <h1><a class = "navlink" href = "https://trentstewart.org">Home</a></h1>
+    <h1><a class = "navlink" href = "https://trentstewart.org/about/">About</a></h1>
+    <h1><a class = "navlink" href = "https://trentstewart.org/blog/">Blog</a></h1>
+    <h1><a class = "navlink" href = "https://trentstewart.org/broadcast/">Media</a></h1>
+    <h1><a class = "navlink" href = "https://trentstewart.org/consult/">Consulting</a></h1>
+    <h1><a class = "navlink" href = "https://trentstewart.org/contact/">Contact</a></h1> -->
     <?php wp_nav_menu( array( 'theme_location' => 'header-menu' ) ); ?>
   </div>
 </div>

@@ -7,7 +7,7 @@
  * It is used to display a page when nothing more specific matches a query.
  * E.g., it puts together the home page when no home.php file exists.
  *
- * @link https://codex.wordpress.org/Template_Hierarchy
+ * @link httpss://codex.wordpress.org/Template_Hierarchy
  *
  * @package WordPress
  * @subpackage Twenty_Seventeen
@@ -24,7 +24,7 @@ get_header(); ?>
                     <h1 class="center">Dr. Trent Stewart</h1>
                     <p class="quote"><?php the_field('top_tagline'); ?></p>
                     <div class="center">
-                        <img class="signature" src="http://trentstewart.org/wp-content/uploads/2019/08/ts-new.png"
+                        <img class="signature" src="https://trentstewart.org/wp-content/uploads/2019/08/ts-new.png"
                              alt="signature">
                     </div>
                 </div>
@@ -47,7 +47,7 @@ get_header(); ?>
                         <h2 class="center header-2">Consulting</h2>
                         <p class="tag"><?php the_field('consulting_section'); ?></p>
                         <div class="center">
-                            <a class="ff dark1" href="http://trentstewart.org/consult">Learn More</a>
+                            <a class="ff dark1" href="https://trentstewart.org/consult">Learn More</a>
                         </div>
                     </div>
                 </div>
@@ -61,7 +61,7 @@ get_header(); ?>
                         <h2 class="center header-2">Blog</h2>
                         <p class="tag"><?php the_field('blog_section'); ?> </p>
                         <div class="center">
-                            <a class="ff dark1" href="http://trentstewart.org/read">Read More</a>
+                            <a class="ff dark1" href="https://trentstewart.org/read">Read More</a>
                         </div>
                     </div>
                 </div>
@@ -75,7 +75,7 @@ get_header(); ?>
                         <h2 class="center header-2">Meet Pastor Trent</h2>
                         <p class="tag"><?php the_field('about_section'); ?> </p>
                         <div class="center">
-                            <a class="ff dark1" href="http://trentstewart.org/about">Read More</a>
+                            <a class="ff dark1" href="https://trentstewart.org/about">Read More</a>
                         </div>
                     </div>
                 </div>

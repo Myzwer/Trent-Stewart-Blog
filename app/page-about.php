@@ -7,7 +7,7 @@
 * It is used to display a page when nothing more specific matches a query.
 * E.g., it puts together the home page when no home.php file exists.
 *
-* @link https://codex.wordpress.org/Template_Hierarchy
+* @link httpss://codex.wordpress.org/Template_Hierarchy
 *
 * @package WordPress
 * @subpackage Twenty_Seventeen
@@ -38,7 +38,7 @@ get_header(); ?>
 <div class="grid-container fullWidth trent-fam">
     <div class="grid-x grid-padding-x">
         <div class="small-12 medium-8 medium-offset-2 cell">
-            <img src="http://trentstewart.org/wp-content/uploads/2019/08/Trent-Family-Photo.jpg" alt="Trent Family Photo">  
+            <img src="https://trentstewart.org/wp-content/uploads/2019/08/Trent-Family-Photo.jpg" alt="Trent Family Photo">  
         </div>
     </div>
 </div>

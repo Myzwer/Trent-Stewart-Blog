@@ -11,25 +11,25 @@
   <div class="grid-x grid-margin-x">
     
     <div class="cell small-12 large-1 footer-link large-offset-2">
-		<a href = "http://trentstewart.org">Home </a>
+		<a href = "https://trentstewart.org">Home </a>
     </div>
     <div class="cell small-12 large-1 footer-link">
-		<a href = "http://trentstewart.org/about">About </a>
+		<a href = "https://trentstewart.org/about">About </a>
     </div>
     <div class="cell small-12  large-1  footer-link">
-		<a href = "http://trentstewart.org/read">Read </a>
+		<a href = "https://trentstewart.org/read">Read </a>
     </div>
     <div class="cell small-12 large-1  footer-link">
-		<a href = "http://trentstewart.org/watch">Watch </a>
+		<a href = "https://trentstewart.org/watch">Watch </a>
     </div>
      <div class="cell small-12 large-1  footer-link">
-         <a href = "http://trentstewart.org/listen">Listen </a>
+         <a href = "https://trentstewart.org/listen">Listen </a>
      </div>
     <div class="cell small-12 large-1  footer-link">
-		<a href = "http://trentstewart.org/consult">Consulting </a>
+		<a href = "https://trentstewart.org/consult">Consulting </a>
     </div>
     <div class="cell small-12 large-1 footer-link">
-		<a href = "http://trentstewart.org/contact">Contact </a>
+		<a href = "https://trentstewart.org/contact">Contact </a>
     </div>
     <div class="cell large-2 footer-link two-word">
 		<a href = "https://foothillschurch.com">Foothills Church </a>

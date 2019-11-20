@@ -36,12 +36,12 @@ get_header(); ?>
                 <div class = "hero-callout">
                     <h2><?php the_field('Section_2_header'); ?></h2>
                     <p><?php the_field('section_2_paragraph'); ?></p>
-                    <a class="ff dark1" href="http://trentstewart.org/contact">Contact Us</a> 
+                    <a class="ff dark1" href="https://trentstewart.org/contact">Contact Us</a> 
                 </div>
             </div>
             <div class="small-12 medium-6 cell">
                 <div class = "hero-callout">
-                <img src="http://trentstewart.org/wp-content/uploads/2019/08/DSC_0337-copy.jpg" alt="">
+                <img src="https://trentstewart.org/wp-content/uploads/2019/08/DSC_0337-copy.jpg" alt="">
             </div>
         </div>
     </div>
@@ -81,7 +81,7 @@ get_header(); ?>
       <div>
         <time><?php the_field('phase_1_title'); ?></time> <!-- <h5>Request Phase:</h5> -->
         <p><?php the_field('phase_1_description'); ?></p>
-    <a class="ff dark1" href="http://trentstewart.org/contact">Contact Us</a>
+    <a class="ff dark1" href="https://trentstewart.org/contact">Contact Us</a>
     </li>
     <li>
       <div>
@@ -176,7 +176,7 @@ get_header(); ?>
                         <p>
                             <?php the_field('package_1_paragraph'); ?>
                         </p>
-                        <a class="ff dark1" href="http://trentstewart.org/contact">Contact Us</a>
+                        <a class="ff dark1" href="https://trentstewart.org/contact">Contact Us</a>
                     </div>
                 </div>
             </div>
@@ -239,7 +239,7 @@ get_header(); ?>
                         <p>
                             <?php the_field('package_2_paragraph'); ?>
                         </p>
-                        <a class="ff dark1" href="http://trentstewart.org/contact">Contact Us</a>
+                        <a class="ff dark1" href="https://trentstewart.org/contact">Contact Us</a>
                     </div>
                 </div>
             </div>
@@ -302,7 +302,7 @@ get_header(); ?>
                         <p>
                             <?php the_field('package_1_paragraph'); ?>
                         </p>
-                        <a class="ff dark1" href="http://trentstewart.org/contact">Contact Us</a>
+                        <a class="ff dark1" href="https://trentstewart.org/contact">Contact Us</a>
                     </div>
                 </div>
             </div>

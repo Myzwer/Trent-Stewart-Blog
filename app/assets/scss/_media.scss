@@ -1,5 +1,21 @@
 .media-page-bg {
-  background: url(../images/media-head.jpg) no-repeat top; 
+  background:  linear-gradient(
+	rgba(0,0,0, 0.35),
+	rgba(0,0,0, 0.35)
+  ), url(https://trentstewart.org/wp-content/uploads/2019/11/jonathan-velasquez-c1ZN57GfDB0-unsplash-copy.jpg)  no-repeat top center;
+background-attachment: scroll;
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;
+color: $primary;
+margin-top: -80px;
+}
+
+@media screen and (min-width: 68em) {
+	.billboard-consult {
+		background-attachment: fixed;
+	}
 }
 
 .media-titles{

@@ -18,9 +18,9 @@ get_header();
                 <div class = "center">
 				<h3>Let's get you where you were going.</h3>
 				<div class = "center">
-                        <a class="ff dark1" href="http://trentstewart.org/">Homepage</a> 
-                         <a class="ff dark1" href="http://trentstewart.org/consult">Consulting</a> 
-                          <a class="ff dark1" href="http://trentstewart.org/blog">Blog</a> 
+                        <a class="ff dark1" href="https://trentstewart.org/">Homepage</a> 
+                         <a class="ff dark1" href="https://trentstewart.org/consult">Consulting</a> 
+                          <a class="ff dark1" href="https://trentstewart.org/blog">Blog</a> 
                     </div>
             </div>
         </div>
