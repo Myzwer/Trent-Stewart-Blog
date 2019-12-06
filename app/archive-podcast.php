@@ -65,7 +65,7 @@ setup_postdata($post);
                     $broadcasts->the_post();
 
                     echo "<div class='small-12 medium-6 large-4 cell'>";
-                    echo "<div class = 'blog-post'>";
+                    echo "<div class = 'podcast-post'>";
                     the_post_thumbnail();
 
                     echo '<h2 class = "title"><a href="' . get_field('podcast_link') . '">' . get_the_title() . '</a></h2>';

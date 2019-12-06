@@ -45,7 +45,7 @@
   background-color: $gray-4;
 }
 
-.blog-post {
+.blog-post, .podcast-post, .watch-post {
   margin-top: 20px;
   padding-bottom: 10px;
   margin-bottom: 20px;
@@ -63,11 +63,29 @@
   }
 }
 
-.blog-post img {
+@media screen and (min-width: 40em) {
+  .blog-post {
+    height: 470px;
+  }
+}
+
+@media screen and (min-width: 40em) {
+  .podcast-post {
+    height: 600px;
+  }
+}
+
+@media screen and (min-width: 40em) {
+  .watch-post {
+    height: 470px;
+  }
+}
+
+.blog-post img, .podcast-post img, .watch-post img {
   width: 100%;
 }
 
-.blog-post .title {
+.blog-post .title, .podcast-post .title, .watch-post .title{
   text-transform: capitalize;
   font-weight: 600;
   color: $primary;
@@ -76,18 +94,18 @@
   padding: 20px 0 0px 10px;
 }
 
-.blog-post .author {
+.blog-post .author, .podcast-post .author, .watch-post .author {
   font-style: bold;
   text-transform: uppercase;
   padding-left: 10px;
   font-size: .8em;
 }
 
-.blog-post .date {
+.blog-post .date, .podcast-post .date, .watch-post .date {
   padding: 10px 0px 20px 0px;
 }
 
-.blog-post .category {
+.blog-post .category, .podcast-post .category, .watch-post .category{
   text-align: right;
   margin-top: -45px;
   padding-right: 10px;

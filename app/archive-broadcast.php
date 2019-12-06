@@ -31,13 +31,7 @@ $this_page = get_page_by_path('broadcasts');
 // echo get_term_link('sermons' , 'format'); 
 ?>
 
-    <div class="grid-container fullWidth">
-        <div class="grid-x grid-padding-x">
-            <div class="small-12 cell">
-                <?php wp_list_categories ( [ 'taxonomy' => 'watch_category' ] ) ?>
-            </div>
-        </div>
-    </div>
+
 
 <h2 class = "media-titles">Sermons</h2>
     <div class="grid-container blog-background">
@@ -74,7 +68,7 @@ if ( $broadcasts->have_posts() ) {
         $broadcasts->the_post();
 
         echo "<div class='small-12 medium-6 large-4 cell'>";
-                echo "<div class = 'blog-post'>";
+                echo "<div class = 'watch-post'>";
                 the_post_thumbnail();
 
                 echo '<h2 class = "title"><a href="' . get_permalink() . '">' . get_the_title() . '</a></h2>';
