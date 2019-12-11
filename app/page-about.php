@@ -38,7 +38,7 @@ get_header(); ?>
 <div class="grid-container fullWidth trent-fam">
     <div class="grid-x grid-padding-x">
         <div class="small-12 medium-8 medium-offset-2 cell">
-            <img src="https://trentstewart.org/wp-content/uploads/2019/08/Trent-Family-Photo.jpg" alt="Trent Family Photo">  
+            <img src="https://trentstewart.org/wp-content/uploads/2019/12/Trent-Family-Photo-rectangle.jpg" alt="Trent Family Photo">  
         </div>
     </div>
 </div>
